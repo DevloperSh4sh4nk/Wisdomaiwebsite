@@ -109,3 +109,35 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
+    const track = document.querySelector('.review-track');
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+
+    let index = 0;
+    const totalCards = 6;
+    const visibleCards = 3;
+    const cardWidth = 390; // card + gap
+
+    function moveSlider() {
+        track.style.transform = `translateX(-${index * cardWidth}px)`;
+    }
+
+    next.addEventListener('click', () => {
+        index++;
+        if (index > totalCards - visibleCards) index = 0;
+        moveSlider();
+    });
+
+    prev.addEventListener('click', () => {
+        index--;
+        if (index < 0) index = totalCards - visibleCards;
+        moveSlider();
+    });
+
+    // Auto Slide
+    setInterval(() => {
+        index++;
+        if (index > totalCards - visibleCards) index = 0;
+        moveSlider();
+    }, 4000);

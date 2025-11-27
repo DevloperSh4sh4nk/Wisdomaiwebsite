@@ -990,3 +990,366 @@ body {
     text-decoration: none;
 }
 
+/* Improved Goals Section */
+.improved-goals {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.goals-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    position: relative;
+}
+
+.goals-text {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.goals-text h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #004b8d;
+    margin-bottom: 10px;
+}
+
+.goals-text .subtitle {
+    font-size: 22px;
+    font-weight: 500;
+    color: #1b73b5;
+    margin-bottom: 15px;
+}
+
+.goals-text p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Illustration Styling */
+.goals-illustration img {
+    width: 260px;
+    height: auto;
+}
+
+.goals-illustration.left img {
+    transform: translateX(-20px);
+}
+
+.goals-illustration.right img {
+    transform: translateX(20px);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .goals-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .goals-illustration.left img,
+    .goals-illustration.right img {
+        transform: translateX(0);
+        width: 200px;
+    }
+}
+.programs-section {
+    padding: 80px 0;
+    background: #fafafa;
+}
+
+.programs-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.programs-header h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.programs-header p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.programs-container {
+    max-width: 1300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.program-card {
+    background: #fff;
+    padding: 35px 25px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 26px rgba(0,0,0,0.12);
+}
+
+.icon-box {
+    font-size: 45px;
+    color: #f5b400;
+    margin-bottom: 15px;
+}
+
+.program-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+}
+
+.program-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.program-btn {
+    display: inline-block;
+    background: #f5b400;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.program-btn:hover {
+    background: #e0a200;
+}
+.reviews-section {
+    padding: 70px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.review-heading {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.review-slider {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.review-track {
+    display: flex;
+    gap: 40px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.review-card {
+    min-width: 350px;
+    background: #fff;
+    padding: 25px 20px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.review-card img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.review-card h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.review-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Navigation Buttons */
+.nav {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #444;
+    font-weight: bold;
+    padding: 5px 15px;
+    transition: 0.3s;
+}
+
+.nav:hover {
+    color: #f5b400;
+}
+
+.prev {
+    left: -20px;
+}
+
+.next {
+    right: -20px;
+}
+/* Navigation Buttons */
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    background: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    line-height: 40px;
+    text-align: center;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.3s ease;
+}
+
+.nav:hover {
+    background: #FFC727;
+    color: #000;
+}
+
+.prev {
+    left: 40px;     /* Adjusted to perfect position */
+}
+
+.next {
+    right: 40px;    /* Adjusted to perfect position */
+}
+/* Section Styling */
+.why-section {
+    position: relative;
+    padding: 100px 0;
+    background: #fafbff;
+    overflow: hidden;
+}
+
+/* Heading */
+.why-section h2 {
+    font-size: 42px;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.why-section .subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+/* Grid Layout */
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+/* Card */
+.why-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 35px 30px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon Styling */
+.icon-wrap {
+    width: 70px;
+    height: 70px;
+    background: #f5f9ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.icon-wrap img {
+    width: 40px;
+}
+
+/* Card Title */
+.why-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+/* Paragraph */
+.why-card p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Vector Decorative Background Shapes */
+.why-bg-shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.4;
+    z-index: 0;
+}
+
+.shape1 {
+    width: 400px;
+    height: 400px;
+    background: #b4d0ff;
+    top: -80px;
+    left: -120px;
+}
+
+.shape2 {
+    width: 350px;
+    height: 350px;
+    background: #ffd8a9;
+    bottom: -50px;
+    right: -100px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+}
