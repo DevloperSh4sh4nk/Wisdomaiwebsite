@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Brochure - Wisdom School</title>
+    <link rel="stylesheet" href="brochure.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="brochure-container">
+        <h1>Download Brochure</h1>
+        <p>Please fill out this form, and we'll share the brochure with you right away!</p>
+        <form class="brochure-form">
+            <div class="form-group name-group">
+                <div>
+                    <label for="first-name">Name *</label>
+                    <input type="text" id="first-name" placeholder="First">
+                </div>
+                <div>
+                    <input type="text" id="last-name" placeholder="Last">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="admission-for">Looking for Admission in *</label>
+                <select id="admission-for">
+                    <option value="">-Select-</option>
+                    <option value="pre-primary">Pre-Primary</option>
+                    <option value="primary">Primary</option>
+                    <option value="middle">Middle School</option>
+                    <option value="senior">Senior School</option>
+                </select>
+            </div>
+            <div class="form-group phone-group">
+                <label for="phone">Phone *</label>
+                <div class="phone-input">
+                    <select id="country-code">
+                        <option value="+91">🇮🇳 +91</option>
+                    </select>
+                    <input type="text" id="phone" placeholder="Please ensure the number is reachable through WhatsApp and Normal calls">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email">
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+            <div class="form-footer">
+                <input type="checkbox" id="brochure-terms">
+                <label for="brochure-terms">By submitting, I agree to Wisdom School's terms, privacy & data use.</label>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
